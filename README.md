@@ -11,6 +11,33 @@ Last Updated: February 24, 2026
 
 ---
 
+## Executive Summary
+
+We evaluated **8 free-tier models** on OpenRouter across **11 practical activities** (2 models were discontinued during testing: DeepSeek R1, OpenRouter Free). Here are the results for the 6 working models.
+
+### Key Findings
+
+| Rank | Model | Score | Pass Rate | Speed | Best For |
+|:----:|-------|:-----:|:---------:|:-----:|----------|
+| 1 | **Nemotron 30B** | **8.60** | 10/11 | 0.5s | Overall best - fast, consistent, excellent all-rounder |
+| 2 | **Step 3.5 Flash** | **8.57** | 11/11 | 2.9s | 100% reliability, best Thai support |
+| 3 | **Trinity Mini** | **8.49** | 10/11 | 0.5s | Fastest, excellent coding & translation |
+| 4 | Gemma 3 27B | 8.44 | 9/11 | 1.1s | Great translation & Thai writing |
+| 5 | Nemotron VL 12B | 8.41 | 7/11 | 0.5s | Vision-capable, fast |
+| 6 | Gemma 3 12B | 8.40 | 10/11 | 4.4s | Solid all-rounder, slower |
+
+> ⚠️ **Discontinued Models:** DeepSeek R1 and OpenRouter Free were also tested but returned 404 errors (no longer available on free tier).
+
+### Quick Recommendations
+
+- **General Purpose:** Nemotron 30B (best balance of speed and quality)
+- **Thai Language:** Step 3.5 Flash (best Thai support and reliability)
+- **Coding Tasks:** Trinity Mini or Nemotron 30B (both score 9.0)
+- **Speed-Critical:** Trinity Mini or Nemotron 30B (both ~0.5s response)
+- **100% Reliability:** Step 3.5 Flash (only model passing all 11 tests)
+
+---
+
 ## 🇹🇭 สรุปภาษาไทย
 
 ### OpenClaw คืออะไร?
@@ -59,33 +86,6 @@ Last Updated: February 24, 2026
 - **กิจกรรม:** 11 กิจกรรม (อ่านเอกสาร, เขียนรายงาน, วิเคราะห์การเงิน, เขียนโค้ด, แปลภาษา, เขียนสร้างสรรค์, ภาษาไทย 3 กิจกรรม)
 - **คะแนนเต็ม:** 10 (คำนวณจาก Accuracy 30%, Completeness 25%, Coherence 20%, Relevance 15%, Speed 10%)
 - **ข้อมูลเพิ่มเติม:** [รายงานฉบับเต็ม](reports/2026-02-24-evaluation.md) | [ข้อมูลดิบ CSV](data/scoresheet.csv)
-
----
-
-## Executive Summary
-
-We evaluated **8 free-tier models** on OpenRouter across **11 practical activities** (2 models were discontinued during testing: DeepSeek R1, OpenRouter Free). Here are the results for the 6 working models.
-
-### Key Findings
-
-| Rank | Model | Score | Pass Rate | Speed | Best For |
-|:----:|-------|:-----:|:---------:|:-----:|----------|
-| 1 | **Nemotron 30B** | **8.60** | 10/11 | 0.5s | Overall best - fast, consistent, excellent all-rounder |
-| 2 | **Step 3.5 Flash** | **8.57** | 11/11 | 2.9s | 100% reliability, best Thai support |
-| 3 | **Trinity Mini** | **8.49** | 10/11 | 0.5s | Fastest, excellent coding & translation |
-| 4 | Gemma 3 27B | 8.44 | 9/11 | 1.1s | Great translation & Thai writing |
-| 5 | Nemotron VL 12B | 8.41 | 7/11 | 0.5s | Vision-capable, fast |
-| 6 | Gemma 3 12B | 8.40 | 10/11 | 4.4s | Solid all-rounder, slower |
-
-> ⚠️ **Discontinued Models:** DeepSeek R1 and OpenRouter Free were also tested but returned 404 errors (no longer available on free tier).
-
-### Quick Recommendations
-
-- **General Purpose:** Nemotron 30B (best balance of speed and quality)
-- **Thai Language:** Step 3.5 Flash (best Thai support and reliability)
-- **Coding Tasks:** Trinity Mini or Nemotron 30B (both score 9.0)
-- **Speed-Critical:** Trinity Mini or Nemotron 30B (both ~0.5s response)
-- **100% Reliability:** Step 3.5 Flash (only model passing all 11 tests)
 
 ---
 
