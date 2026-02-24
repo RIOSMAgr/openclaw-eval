@@ -73,7 +73,7 @@ We evaluated **8 free-tier models** on OpenRouter across **11 practical activiti
 |-------|:-----------:|:--------------:|:-----------:|:---------:|
 | **Step 3.5 Flash** | 7.60 | **8.50** | 8.80 | **8.30** |
 | **Gemma 3 27B** | 7.60 | **8.50** | 8.80 | **8.30** |
-| Nemotron 30B | 7.60 | - | 8.80 | 8.20 |
+| Nemotron 30B | 7.60 | ERR | 8.80 | 8.20 |
 | Nemotron VL 12B | 6.90 | 8.30 | 8.80 | 8.00 |
 | Gemma 3 12B | 7.10 | 8.10 | 8.60 | 7.93 |
 | Trinity Mini | 6.35 | 7.90 | 8.80 | 7.68 |
@@ -220,10 +220,10 @@ We designed 11 activities covering common LLM use cases:
 |-------|:-------------:|:----------------:|:------------:|:--------:|
 | Step 3.5 Flash | 7.60 | 8.50 | 8.80 | **8.30** |
 | Gemma 3 27B | 7.60 | 8.50 | 8.80 | **8.30** |
-| Trinity Mini | 6.35 | 7.90 | 8.80 | **7.68** |
-| Nemotron VL 12B | 6.90 | 8.30 | 8.80 | **8.00** |
 | Nemotron 30B | 7.60 | ERR | 8.80 | **8.20** |
+| Nemotron VL 12B | 6.90 | 8.30 | 8.80 | **8.00** |
 | Gemma 3 12B | 7.10 | 8.10 | 8.60 | **7.93** |
+| Trinity Mini | 6.35 | 7.90 | 8.80 | **7.68** |
 
 ---
 
@@ -234,8 +234,8 @@ Average Response Time
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Trinity Mini     ▏ 0.5s ████████████████████ FASTEST
 Nemotron 30B     ▏ 0.5s ████████████████████
-Nemotron VL 12B  ▏ 0.7s ████████████████████
-Gemma 3 27B      ▏ 1.1s ███████████████████░
+Nemotron VL 12B  ▏ 0.7s ███████████████████░
+Gemma 3 27B      ▏ 1.1s ██████████████████░░
 Step 3.5 Flash   ▏ 2.9s ████████████████░░░░
 Gemma 3 12B      ▏ 4.4s █████████████░░░░░░░ SLOWEST
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -252,7 +252,7 @@ Gemma 3 12B      ▏ 4.4s █████████████░░░░░
 | Trinity Mini | 10/11 (91%) | 9% | Text Analysis |
 | Gemma 3 12B | 10/11 (91%) | 9% | Financial Analysis |
 | Gemma 3 27B | 9/11 (82%) | 18% | Text Analysis, Code Gen |
-| Nemotron VL 12B | 7/11 (64%) | 36% | Writing, Translation, Creative |
+| Nemotron VL 12B | 7/11 (64%) | 36% | Writing, Translation, Creative, Instructions |
 
 ---
 
