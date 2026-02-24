@@ -1,0 +1,67 @@
+model,activity,accuracy,completeness,coherence,relevance,speed,total,time_seconds
+Trinity Mini,Document Reading,10,7,8,8,10,8.55,0.6
+Trinity Mini,Document Writing,10,8,9,8,10,9.00,0.5
+Trinity Mini,Financial Analysis,10,8,9,8,10,9.00,0.5
+Trinity Mini,Text Analysis,0,0,0,0,0,0.00,0
+Trinity Mini,Code Generation,10,8,9,8,10,9.00,0.7
+Trinity Mini,Translation,10,8,9,8,10,9.00,0.4
+Trinity Mini,Creative Writing,10,7,9,8,10,8.75,0.5
+Trinity Mini,Instruction Following,10,7,8,8,10,8.55,0.7
+Trinity Mini,Thai Summarization,2,7,9,8,10,6.35,0.4
+Trinity Mini,Thai Creative Writing,8,6,9,8,10,7.90,0.4
+Trinity Mini,Thai Instruction,10,8,8,8,10,8.80,0.4
+Step 3.5 Flash,Document Reading,10,7,6,8,8,7.95,6.5
+Step 3.5 Flash,Document Writing,10,8,9,8,10,9.00,0.8
+Step 3.5 Flash,Financial Analysis,10,8,9,8,10,9.00,1.3
+Step 3.5 Flash,Text Analysis,10,7,9,8,10,8.75,3.1
+Step 3.5 Flash,Code Generation,10,8,9,8,10,9.00,2.9
+Step 3.5 Flash,Translation,10,8,6,8,10,8.40,4.2
+Step 3.5 Flash,Creative Writing,10,7,9,8,10,8.75,3.9
+Step 3.5 Flash,Instruction Following,10,7,8,8,10,8.55,2.8
+Step 3.5 Flash,Thai Summarization,8,8,5,8,10,7.60,1.2
+Step 3.5 Flash,Thai Creative Writing,10,6,9,8,10,8.50,1.0
+Step 3.5 Flash,Thai Instruction,10,8,8,8,10,8.80,4.4
+Gemma 3 27B,Document Reading,10,7,6,8,10,8.15,1.4
+Gemma 3 27B,Document Writing,10,8,9,8,10,9.00,1.2
+Gemma 3 27B,Financial Analysis,10,8,9,8,10,9.00,1.8
+Gemma 3 27B,Text Analysis,0,0,0,0,0,0.00,0
+Gemma 3 27B,Code Generation,0,0,0,0,0,0.00,0
+Gemma 3 27B,Translation,10,8,8,8,10,8.80,1.1
+Gemma 3 27B,Creative Writing,6,7,9,8,10,7.55,1.3
+Gemma 3 27B,Instruction Following,10,7,8,8,10,8.55,1.1
+Gemma 3 27B,Thai Summarization,8,8,5,8,10,7.60,1.8
+Gemma 3 27B,Thai Creative Writing,10,6,9,8,10,8.50,1.5
+Gemma 3 27B,Thai Instruction,10,8,8,8,10,8.80,1.3
+Gemma 3 12B,Document Reading,10,7,6,8,10,8.15,3.6
+Gemma 3 12B,Document Writing,10,8,9,8,10,9.00,3.2
+Gemma 3 12B,Financial Analysis,0,0,0,0,0,0.00,0
+Gemma 3 12B,Text Analysis,10,7,9,8,8,8.55,5.9
+Gemma 3 12B,Code Generation,10,8,9,8,10,9.00,3.4
+Gemma 3 12B,Translation,10,8,7,8,10,8.60,3.5
+Gemma 3 12B,Creative Writing,10,7,9,8,8,8.55,5.6
+Gemma 3 12B,Instruction Following,10,7,8,8,8,8.35,5.7
+Gemma 3 12B,Thai Summarization,7,8,5,8,8,7.10,5.9
+Gemma 3 12B,Thai Creative Writing,10,6,8,8,8,8.10,5.9
+Gemma 3 12B,Thai Instruction,10,8,8,8,8,8.60,5.9
+Nemotron 30B,Document Reading,10,7,6,8,10,8.15,0.6
+Nemotron 30B,Document Writing,10,8,9,8,10,9.00,0.6
+Nemotron 30B,Financial Analysis,10,8,9,8,10,9.00,0.5
+Nemotron 30B,Text Analysis,10,7,9,8,10,8.75,0.6
+Nemotron 30B,Code Generation,10,8,9,8,10,9.00,0.5
+Nemotron 30B,Translation,10,8,7,8,10,8.60,0.5
+Nemotron 30B,Creative Writing,10,7,8,8,10,8.55,0.6
+Nemotron 30B,Instruction Following,10,7,8,8,10,8.55,0.5
+Nemotron 30B,Thai Summarization,8,8,5,8,10,7.60,0.5
+Nemotron 30B,Thai Creative Writing,0,0,0,0,0,0.00,0
+Nemotron 30B,Thai Instruction,10,8,8,8,10,8.80,0.5
+Nemotron VL 12B,Document Reading,10,7,6,8,10,8.15,0.7
+Nemotron VL 12B,Document Writing,0,0,0,0,0,0.00,0
+Nemotron VL 12B,Financial Analysis,10,8,9,8,10,9.00,1.8
+Nemotron VL 12B,Text Analysis,10,7,9,8,10,8.75,0.7
+Nemotron VL 12B,Code Generation,10,8,9,8,10,9.00,0.6
+Nemotron VL 12B,Translation,0,0,0,0,0,0.00,0
+Nemotron VL 12B,Creative Writing,0,0,0,0,0,0.00,0
+Nemotron VL 12B,Instruction Following,0,0,0,0,0,0.00,0
+Nemotron VL 12B,Thai Summarization,5,8,6,8,10,6.90,0.7
+Nemotron VL 12B,Thai Creative Writing,10,6,8,8,10,8.30,0.6
+Nemotron VL 12B,Thai Instruction,10,8,8,8,10,8.80,0.8
