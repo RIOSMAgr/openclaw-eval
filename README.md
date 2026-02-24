@@ -2,7 +2,63 @@
 
 **Comprehensive benchmark of OpenRouter free-tier LLMs for practical applications**
 
+[![GitHub](https://img.shields.io/badge/GitHub-bejranonda%2Fopenclaw--eval-blue?logo=github)](https://github.com/bejranonda/openclaw-eval)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Models](https://img.shields.io/badge/Models-6-green)]()
+[![Activities](https://img.shields.io/badge/Activities-11-green)]()
+
 Last Updated: February 24, 2026
+
+---
+
+## 🇹🇭 สรุปภาษาไทย
+
+### OpenClaw คืออะไร?
+
+**OpenClaw** เป็นโปรเจกต์ AI Gateway ส่วนบุคคลที่พัฒนาเพื่อทดสอบและเปรียบเทียบประสิทธิภาพของ Large Language Models (LLMs) บนแพลตฟอร์ม OpenRouter โดยเฉพาะ **Free-tier models** ที่ใช้งานได้ฟรี
+
+### ผลการทดสอบโดยสรุป
+
+เราทดสอบ **6 โมเดล** บน OpenRouter ฟรี ผ่าน **11 กิจกรรม** เพื่อหาโมเดลที่เหมาะกับแอปพลิเคชันของคุณ
+
+| อันดับ | โมเดล | คะแนน | ความเร็ว | เหมาะสำหรับ |
+|:------:|-------|:-----:|:--------:|-------------|
+| 🥇 | **Nemotron 30B** | **8.60** | 0.5 วินาที | ใช้ทั่วไป ดีที่สุดแบบครบวงจร |
+| 🥈 | **Step 3.5 Flash** | **8.57** | 2.9 วินาที | ภาษาไทย เสถียรที่สุด 100% |
+| 🥉 | **Trinity Mini** | **8.49** | 0.5 วินาที | เร็วที่สุด เขียนโค้ด/แปลดีมาก |
+| 4 | Gemma 3 27B | 8.44 | 1.1 วินาที | แปลภาษา เขียนไทยดี |
+| 5 | Nemotron VL 12B | 8.41 | 0.5 วินาที | รองรับ Vision (รูปภาพ) |
+| 6 | Gemma 3 12B | 8.40 | 4.4 วินาที | ใช้ได้ดี แต่ช้าที่สุด |
+
+### แนะนำตามการใช้งาน
+
+| การใช้งาน | โมเดลที่แนะนำ | เหตุผล |
+|-----------|----------------|--------|
+| **Chatbot ทั่วไป** | Nemotron 30B | ดีที่สุดโดยรวม ตอบเร็ว |
+| **แอปภาษาไทย** | Step 3.5 Flash | รองรับภาษาไทยดีที่สุด เสถียร 100% |
+| **Coding Assistant** | Trinity Mini | เร็วที่สุด เขียนโค้ดได้ดีมาก (9.0) |
+| **ต้องการความเร็ว** | Trinity Mini / Nemotron 30B | ตอบใน 0.5 วินาที |
+| **Production** | Step 3.5 Flash | ผ่านการทดสอบ 11/11 (100%) |
+
+### ภาษาไทย
+
+| โมเดล | สรุปข้อความ | เขียนสร้างสรรค์ | ทำตามคำสั่ง | เฉลี่ยไทย |
+|-------|:-----------:|:--------------:|:-----------:|:---------:|
+| **Step 3.5 Flash** | 7.60 | **8.50** | 8.80 | **8.30** |
+| **Gemma 3 27B** | 7.60 | **8.50** | 8.80 | **8.30** |
+| Nemotron 30B | 7.60 | - | 8.80 | 8.20 |
+| Nemotron VL 12B | 6.90 | 8.30 | 8.80 | 8.00 |
+| Gemma 3 12B | 7.10 | 8.10 | 8.60 | 7.93 |
+| Trinity Mini | 6.35 | 7.90 | 8.80 | 7.68 |
+
+> 💡 **สรุป:** ถ้าต้องการใช้งานภาษาไทย แนะนำ **Step 3.5 Flash** หรือ **Gemma 3 27B**
+
+### วิธีการทดสอบ
+
+- **ทดสอบผ่าน:** OpenRouter API (Free-tier)
+- **กิจกรรม:** 11 กิจกรรม (อ่านเอกสาร, เขียนรายงาน, วิเคราะห์การเงิน, เขียนโค้ด, แปลภาษา, เขียนสร้างสรรค์, ภาษาไทย 3 กิจกรรม)
+- **คะแนนเต็ม:** 10 (คำนวณจาก Accuracy 30%, Completeness 25%, Coherence 20%, Relevance 15%, Speed 10%)
+- **ข้อมูลเพิ่มเติม:** [รายงานฉบับเต็ม](reports/2026-02-24-evaluation.md) | [ข้อมูลดิบ CSV](data/scoresheet.csv)
 
 ---
 
