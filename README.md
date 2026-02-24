@@ -4,7 +4,7 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-bejranonda%2Fopenclaw--eval-blue?logo=github)](https://github.com/bejranonda/openclaw-eval)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Models](https://img.shields.io/badge/Models-6-green)]()
+[![Models](https://img.shields.io/badge/Models-8_tested,_6_working-green)]()
 [![Activities](https://img.shields.io/badge/Activities-11-green)]()
 
 Last Updated: February 24, 2026
@@ -19,7 +19,7 @@ Last Updated: February 24, 2026
 
 ### ผลการทดสอบโดยสรุป
 
-เราทดสอบ **6 โมเดล** บน OpenRouter ฟรี ผ่าน **11 กิจกรรม** เพื่อหาโมเดลที่เหมาะกับแอปพลิเคชันของคุณ
+เราทดสอบ **8 โมเดล** บน OpenRouter ฟรี ผ่าน **11 กิจกรรม** (2 โมเดล discontinued ระหว่างการทดสอบ) เพื่อหาโมเดลที่เหมาะกับแอปพลิเคชันของคุณ
 
 | อันดับ | โมเดล | คะแนน | ความเร็ว | เหมาะสำหรับ |
 |:------:|-------|:-----:|:--------:|-------------|
@@ -64,7 +64,7 @@ Last Updated: February 24, 2026
 
 ## Executive Summary
 
-We evaluated **6 free-tier models** on OpenRouter across **11 practical activities** to identify the best options for cost-conscious AI applications.
+We evaluated **8 free-tier models** on OpenRouter across **11 practical activities** (2 models were discontinued during testing: DeepSeek R1, OpenRouter Free). Here are the results for the 6 working models.
 
 ### Key Findings
 
@@ -76,6 +76,8 @@ We evaluated **6 free-tier models** on OpenRouter across **11 practical activiti
 | 4 | Gemma 3 27B | 8.44 | 9/11 | 1.1s | Great translation & Thai writing |
 | 5 | Nemotron VL 12B | 8.41 | 7/11 | 0.5s | Vision-capable, fast |
 | 6 | Gemma 3 12B | 8.40 | 10/11 | 4.4s | Solid all-rounder, slower |
+
+> ⚠️ **Discontinued Models:** DeepSeek R1 and OpenRouter Free were also tested but returned 404 errors (no longer available on free tier).
 
 ### Quick Recommendations
 
